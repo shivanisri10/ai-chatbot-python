@@ -1,1 +1,73 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "howdy"],
+      "responses": [
+        "Hello! How can I help you?",
+        "Hey there! What can I do for you?",
+        "Hi! Great to see you."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "take care", "later"],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care!",
+        "Bye! Come back anytime."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it", "cheers", "thx"],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime! Is there anything else?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": ["what is your name", "who are you", "what should I call you"],
+      "responses": [
+        "I'm PyBot, your Python-powered chatbot!",
+        "You can call me PyBot. Nice to meet you!"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": ["what can you do", "how do you work", "tell me about yourself"],
+      "responses": [
+        "I'm a chatbot built with Python and NLP. I can answer questions and have a conversation!",
+        "I use NLTK to understand your messages and find the best response. Ask me anything!"
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": ["what is python", "tell me about python", "why use python"],
+      "responses": [
+        "Python is a beginner-friendly programming language great for AI, web development, and automation!",
+        "Python is one of the most popular languages. It's clean, readable, and has tons of libraries."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "say something funny", "make me laugh"],
+      "responses": [
+        "Why do Python programmers prefer dark mode? Because light attracts bugs!",
+        "Why did the developer quit? Because they didn't get arrays!",
+        "A SQL query walks into a bar and asks two tables: 'Can I JOIN you?'"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": ["help", "I need help", "what should I ask", "I am confused"],
+      "responses": [
+        "You can ask me: who I am, about Python, for a joke, or just say hello!",
+        "Try asking: 'what is Python?', 'tell me a joke', or 'how do you work?'"
+      ]
+    }
+  ]
+}
 
