@@ -9,7 +9,7 @@ A beginner AI chatbot built using **Python** and **Natural Language Processing (
 - Responds to user greetings
 - Answers basic questions
 - Simple intent recognition using NLP
-- Easy to extend — just add new entries to `intents.json`
+- Easy to extend - just add new entries to `intents.json`
 
 ---
 
@@ -27,9 +27,9 @@ ai-chatbot-python/
 
 ## 🛠️ Technologies Used
 
-- **Python** — core language
-- **NLTK** — tokenization and stemming
-- **NumPy** — listed as a dependency for NLP support
+- **Python** - core language
+- **NLTK** - tokenization and stemming
+- **NumPy** - listed as a dependency for NLP support
 
 ---
 
