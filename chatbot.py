@@ -1,7 +1,3 @@
-# AI Chatbot using Python and NLP
-# This chatbot reads intents from a JSON file and matches user input
-# to find the best response using simple NLP techniques.
-
 import json
 import random
 import nltk
