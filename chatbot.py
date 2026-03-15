@@ -11,23 +11,12 @@ with open("intents.json") as f:
 
 stemmer = PorterStemmer()
 
-
 def clean_input(text):
-    """
-    Tokenize and stem the user's input.
-    Tokenize = split a sentence into individual words
-    Stem     = reduce each word to its root form
-    """
-    words = nltk.word_tokenize(text.lower())
-    return [stemmer.stem(word) for word in words]
+    return [stemmer.stem(word) for word in nltk.word_tokenize(text.lower())]
 
 
 def get_response(user_input):
-    """
-    Compare the user's input against every pattern in intents.json.
-    Count how many words match, then return a response from the
-    best-matching intent.
-    """
+
     user_words = clean_input(user_input)
 
     best_match_tag = None
@@ -35,6 +24,7 @@ def get_response(user_input):
 
     for intent in intents["intents"]:
         for pattern in intent["patterns"]:
+
             pattern_words = clean_input(pattern)
 
             matches = sum(1 for word in user_words if word in pattern_words)
@@ -52,7 +42,7 @@ def get_response(user_input):
 
 
 def main():
-    """Main function — runs the chat loop."""
+
     print("=" * 45)
     print("   AI Chatbot — Python & NLP Project")
     print("   Type 'quit' to exit")
@@ -60,6 +50,7 @@ def main():
     print()
 
     while True:
+
         user_input = input("You: ").strip()
 
         if not user_input:
@@ -70,7 +61,8 @@ def main():
             break
 
         response = get_response(user_input)
-        print(f"Bot: {response}")
+
+        print("Bot:", response)
         print()
 
 
